@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import ProjectManagement from './components/TrelloManagement';
+import ProjectManagement from './components/ProjectManagement';
 
 function App() {
   return (

@@ -1,0 +1,32 @@
+Project Management Component Documentation
+Overview
+The ProjectManagement component is responsible for managing a project's tasks across different stages represented by columns: To Do, In Progress, and Done. It provides functionality to add, edit, and delete tasks, as well as drag-and-drop functionality for moving tasks between columns.
+
+Functionality
+Add Card
+Allows users to add a new task card to the selected column.
+Validates the title and description of the new task before adding it.
+Opens a modal dialog for entering the task details.
+Edit Card
+Enables users to edit the details of an existing task card.
+Opens a modal dialog pre-filled with the selected task's details for editing.
+Validates the updated title and description before saving changes.
+Delete Card
+Provides an option to delete a task card from the project.
+Prompts the user for confirmation before permanently removing the task.
+Drag-and-Drop
+Implements drag-and-drop functionality for moving task cards between columns.
+Updates the task card's position and column when dropped into a new column.
+Design Approach
+Component Structure
+Utilizes React functional components and hooks for state management.
+Organizes tasks into columns within a flexible grid layout.
+State Management
+Utilizes React's useState and useEffect hooks for managing component state.
+Stores column and task data in the component's state, synchronized with local storage.
+User Interface
+Employs Bootstrap for responsive and visually appealing UI components.
+Enhances user experience with modal dialogs for adding and editing task details.
+Drag-and-Drop Implementation
+Implements HTML5 drag-and-drop API for intuitive task management.
+Handles drag start, drag over, and drop events to update task positions.

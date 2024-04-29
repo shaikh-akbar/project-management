@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './TrelloManagement.css';
+import './ProjectManagement.css';
 
-function TrelloManagement() {
+function ProjectManagement() {
     const [columns, setColumns] = useState(() => {
         const storedColumns = localStorage.getItem('columns');
         return storedColumns ? JSON.parse(storedColumns) : [
@@ -248,7 +248,7 @@ function TrelloManagement() {
     );
 }
 
-export default TrelloManagement;
+export default ProjectManagement;
 
 
 
